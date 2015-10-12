@@ -1,0 +1,19 @@
+{
+    "name": "digo-node-sass",
+    "version": "0.1.0",
+    "repository": "http://github.com/digojs/digo-node-sass",
+    "description": "digo 插件：使用 node-sass 编译 SASS",
+    "keywords": [
+        "digo plugin",
+        "sass",
+        "scss"
+    ],
+    "license": "MIT",
+    "author": "xuld <xuld@vip.qq.com>",
+    "dependencies": {
+        "node-sass": "latest"
+    },
+    "files": [
+        "index.js"
+    ]
+}
