@@ -24,7 +24,11 @@ module.exports = function Sass(file, options, done) {
         } else {
             file.buffer = result.css;
             if (result.map) {
-                file.applySourceMap(result.map.toString());
+                const map = JSON.parse(result.map.toString());
+                for (var i = 0; i < map.sources.length; i++) {
+                    map.sources[i] = file.resolve(map.sources[i]);
+                }
+                file.applySourceMap(map);
             }
             file.dep(result.stats.includedFiles, {
                 plugin: "sass",

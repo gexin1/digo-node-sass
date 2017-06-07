@@ -1,6 +1,6 @@
 {
     "name": "digo-node-sass",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "repository": "http://github.com/digojs/digo-node-sass",
     "description": "digo 插件：使用 node-sass 编译 SASS",
     "keywords": [
