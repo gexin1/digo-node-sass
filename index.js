@@ -11,6 +11,10 @@ module.exports = function Sass(file, options, done) {
         outputStyle: "expanded"
     }, options);
     file.ext = ".css";
+    if (!file.content) {
+    	done();
+    	return;
+    }
     sass.render(options, function (error, result) {
         if (error) {
             file.error({
