@@ -2,7 +2,7 @@
     "name": "digo-node-sass",
     "version": "0.1.2",
     "repository": "http://github.com/digojs/digo-node-sass",
-    "description": "digo 插件：使用 node-sass 编译 SASS",
+    "description": "digo 插件：使用 sass 编译 SASS",
     "keywords": [
         "digo-plugin",
         "digo-css",
@@ -12,7 +12,7 @@
     "license": "MIT",
     "author": "xuld <xuld@vip.qq.com>",
     "dependencies": {
-        "node-sass": "latest"
+        "sass": "^1.49.9"
     },
     "files": [
         "index.js"

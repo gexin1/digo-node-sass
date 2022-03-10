@@ -1,4 +1,4 @@
-﻿var sass = require("node-sass");
+﻿var sass = require("sass");
 
 module.exports = function Sass(file, options, done) {
     options = Object.assign({
